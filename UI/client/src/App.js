@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import {
 	Drawer,
 	AppBar,
@@ -8,12 +8,13 @@ import {
 	createMuiTheme,
 	Menu,
 	MenuItem,
-  Toolbar,
-  IconButton,
-  Typography,
-  Button
+	Toolbar,
+	IconButton,
+	Typography,
+	Button
 } from 'material-ui';
 import Login from './containers/login';
+import Home from './containers/home';
 
 const theme = createMuiTheme({
 	palette: {
@@ -33,16 +34,16 @@ const theme = createMuiTheme({
 });
 
 const styles = {
-  root: {
-    flexGrow: 1,
-  },
-  flex: {
-    flex: 1,
-  },
-  menuButton: {
-    marginLeft: -12,
-    marginRight: 20,
-  },
+	root: {
+		flexGrow: 1,
+	},
+	flex: {
+		flex: 1,
+	},
+	menuButton: {
+		marginLeft: -12,
+		marginRight: 20,
+	},
 };
 
 class App extends Component {
@@ -50,32 +51,19 @@ class App extends Component {
 		return (
 			<MuiThemeProvider theme={theme}>
 				<Drawer open={true} variant="permanent">
-					<AppBar title="RateMyDebate">
-						<Toolbar>
-							<IconButton
-								color="inherit"
-								aria-label="Menu"
-							>
-							</IconButton>
-							<Typography
-								variant="title"
-								color="inherit"
-							>
-								Title
-							</Typography>
-							<Button color="inherit">Login</Button>
-						</Toolbar>
+					<AppBar title="RateMyDebate" >
+						<Menu open={false}>
+							<MenuItem>
+								A{' '}
+							</MenuItem>
+						</Menu>
 					</AppBar>
-          <Menu open={false}>
-            <MenuItem>
-              A{' '}
-            </MenuItem>
-          </Menu>
 				</Drawer>
 				<main>
-					<Router>
-						<Route path="/" component={Login} />
-					</Router>
+					<Switch>
+						<Route exact path="/" component={Login} />
+						<Route path="/home" component={Home} />
+					</Switch>
 				</main>
 			</MuiThemeProvider>
 		);
