@@ -5,7 +5,7 @@ import { Toolbar, Menu, MenuItem, Popover } from 'material-ui';
 const homePage = (props) => {
     return (<div>
         <Toolbar title="Toolbar" >
-            <Menu open={false} title="Menu" anchorEl={event.currentTarget} >
+            <Menu open={false} title="Menu">
                 <MenuItem>Hey</MenuItem>
                 <MenuItem>You</MenuItem>
             </Menu>

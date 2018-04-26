@@ -3,6 +3,7 @@ import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import {
 	Drawer,
+	Divider,
 	AppBar,
 	MuiThemeProvider,
 	createMuiTheme,
@@ -47,17 +48,21 @@ const styles = {
 };
 
 class App extends Component {
+	state = {
+		anchor: 'left',
+	};
+
+	handleChange = event => {
+		this.setState({
+			anchor: event.target.value,
+		});
+	};
 	render() {
 		return (
-			<MuiThemeProvider theme={theme}>
+			<div>
 				<Drawer open={true} variant="permanent">
-					<AppBar title="RateMyDebate" >
-						<Menu open={false}>
-							<MenuItem>
-								A{' '}
-							</MenuItem>
-						</Menu>
-					</AppBar>
+					<MenuItem>A</MenuItem>
+					<MenuItem>B</MenuItem>
 				</Drawer>
 				<main>
 					<Switch>
@@ -65,7 +70,7 @@ class App extends Component {
 						<Route path="/home" component={Home} />
 					</Switch>
 				</main>
-			</MuiThemeProvider>
+			</div>
 		);
 	}
 }
