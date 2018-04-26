@@ -1,14 +1,14 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js start
+  C:\Program Files (x86)\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js start
 
 PATH: 
-  C:\Program Files\Docker\Docker\Resources\bin;C:\tools\ruby23\bin;C:\MinGW\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.0.1\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.0.1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\CMake\bin;C:\Program Files\Haskell Platform\8.0.1\mingw\bin;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Program Files\dotnet\;C:\Program Files\LLVM\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\Rasmu\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\Rasmu\AppData\Local\Programs\Python\Python36-32\;C:\Users\Rasmu\AppData\Roaming\cabal\bin;C:\Users\Rasmu\AppData\Roaming\local\bin;C:\Users\Rasmu\AppData\Local\Microsoft\WindowsApps;C:\MinGW\bin;C:\Program Files\CMake\bin;c:\Maven\apache-maven-3.5.0\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\Rasmu\AppData\Roaming\npm;C:\Users\Rasmu\AppData\Local\Yarn\bin
+  C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files\Microsoft MPI\Bin\;C:\tools\ruby23\bin;C:\Program Files\Haskell\bin;D:\Program Files\Haskell Platform\8.0.1\lib\extralibs\bin;D:\Program Files\Haskell Platform\8.0.1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_73\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Rasmus\.dnx\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;D:\Program Files\Haskell Platform\8.0.1\mingw\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\vim\vim80;C:\Program Files (x86)\Skype\Phone\;D:\Program Files\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\dotnet;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\phantomjs\phantomjs-2.1.1-windows\bin;C:\Program Files (x86)\Google\Chrome\Application;C:\Program Files (x86)\Yarn\bin\;C:\Program Files (x86)\nodejs\;C:\Users\Rasmus\Anaconda3;C:\Users\Rasmus\Anaconda3\Scripts;C:\Users\Rasmus\Anaconda3\Library\bin;C:\Users\Rasmus\.cargo\bin;C:\Users\Rasmus\AppData\Roaming\cabal\bin;D:\Users\Rasmus\AppData\Roaming\local\bin;C:\Ruby23\bin;C:\Users\Rasmus\.dnx\runtimes\dnx-clr-win-x86.1.0.0-rc1-update1\bin;C:\Users\Rasmus\AppData\Local\Programs\Python\Python35-32\Scripts\;C:\Users\Rasmus\AppData\Local\Programs\Python\Python35-32\;.bin;C:\Users\Rasmus\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\;C:\Strawberry\perl\bin;C:\Users\Rasmus\AppData\Local\.meteor\;C:\Users\Rasmus\AppData\Local\Microsoft\WindowsApps;D:\Maven\apache-maven-3.5.0\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\Rasmus\AppData\Local\Yarn\bin;C:\Users\Rasmus\AppData\Roaming\npm
 
 Yarn version: 
   1.5.1
 
 Node version: 
-  8.9.4
+  8.10.0
 
 Platform: 
   win32 x64
@@ -23,7 +23,7 @@ Lockfile:
   No lockfile
 
 Trace: 
-  Error: Couldn't find a package.json file in "C:\\Projects\\OAuthMaterialUiDemo\\UI"
+  Error: Couldn't find a package.json file in "C:\\Projects\\Auth\\UI"
       at new MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
       at C:\Program Files (x86)\Yarn\lib\cli.js:40048:15
       at Generator.next (<anonymous>)

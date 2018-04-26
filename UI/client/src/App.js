@@ -16,6 +16,7 @@ import {
 } from 'material-ui';
 import Login from './containers/login';
 import Home from './containers/home';
+import ClippedDrawer from './components/ClippedDrawer';
 
 const theme = createMuiTheme({
 	palette: {
@@ -34,43 +35,34 @@ const theme = createMuiTheme({
 	}
 });
 
-const styles = {
-	root: {
-		flexGrow: 1,
-	},
-	flex: {
-		flex: 1,
-	},
-	menuButton: {
-		marginLeft: -12,
-		marginRight: 20,
-	},
-};
+
 
 class App extends Component {
 	state = {
-		anchor: 'left',
+		anchor: 'left'
 	};
 
 	handleChange = event => {
 		this.setState({
-			anchor: event.target.value,
+			anchor: event.target.value
 		});
 	};
 	render() {
 		return (
-			<div>
-				<Drawer open={true} variant="permanent">
-					<MenuItem>A</MenuItem>
-					<MenuItem>B</MenuItem>
-				</Drawer>
-				<main>
-					<Switch>
-						<Route exact path="/" component={Login} />
-						<Route path="/home" component={Home} />
-					</Switch>
-				</main>
-			</div>
+			<MuiThemeProvider theme={theme}>
+				<div>
+					<Drawer open={true} variant="permanent">
+						<MenuItem>A</MenuItem>
+						<MenuItem>B</MenuItem>
+					</Drawer>
+					<main>
+						<Switch>
+							<Route exact path="/" component={Login} />
+							<Route path="/home" component={Home} />
+						</Switch>
+					</main>
+				</div>
+			</MuiThemeProvider>
 		);
 	}
 }
