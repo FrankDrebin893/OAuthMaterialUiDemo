@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { AppBar, Drawer, Toolbar, Typography, List, Divider } from 'material-ui';
+import { AppBar, Drawer, Toolbar, Typography, List, Divider, ListItem, ListItemIcon, withStyles } from 'material-ui';
+
 
 const drawerWidth = 240;
 
@@ -37,10 +38,11 @@ class ClippedDrawer extends Component {
         }
     }
     
-	render() {
+    render() {
+        const { classes } = this.props;
 		return (
 			<div>
-				<AppBar position="absolute" className={this.state.classes.appBar}>
+				<AppBar position="absolute" className={classes.appBar}>
 					<Toolbar>
 						<Typography variant="title" color="inherit" noWrap>
 							Clipped drawer
@@ -50,17 +52,19 @@ class ClippedDrawer extends Component {
 				<Drawer
 					variant="permanent"
 					classes={{
-						paper: this.state.classes.drawerPaper
+						paper: classes.drawerPaper
 					}}
-				>
-					<div className={this.state.classes.toolbar} />
-					<List>{mailFolderListItems}</List>
-					<Divider />
-					<List>{otherMailFolderListItems}</List>
+                >
+                <div className={classes.toolbar} />    
+                    <List>
+                        <ListItem button>
+                            Analysis    
+                        </ListItem>
+                    </List>    
 				</Drawer>
 			</div>
 		);
 	}
 }
 
-export default ClippedDrawer;
+export default withStyles(styles)(ClippedDrawer);

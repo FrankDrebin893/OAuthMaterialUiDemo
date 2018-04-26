@@ -35,8 +35,6 @@ const theme = createMuiTheme({
 	}
 });
 
-
-
 class App extends Component {
 	state = {
 		anchor: 'left'
@@ -51,10 +49,11 @@ class App extends Component {
 		return (
 			<MuiThemeProvider theme={theme}>
 				<div>
-					<Drawer open={true} variant="permanent">
+					{/*<Drawer open={true} variant="permanent">
 						<MenuItem>A</MenuItem>
 						<MenuItem>B</MenuItem>
-					</Drawer>
+		</Drawer>*/}
+					<ClippedDrawer />
 					<main>
 						<Switch>
 							<Route exact path="/" component={Login} />
