@@ -8,3 +8,4 @@ C:\Projects\Auth\Backend\obj\Debug\netcoreapp2.0\Backend.AssemblyInfoInputs.cach
 C:\Projects\Auth\Backend\obj\Debug\netcoreapp2.0\Backend.AssemblyInfo.cs
 C:\Projects\Auth\Backend\obj\Debug\netcoreapp2.0\Backend.dll
 C:\Projects\Auth\Backend\obj\Debug\netcoreapp2.0\Backend.pdb
+C:\Projects\Auth\Backend\obj\Debug\netcoreapp2.0\Backend.csprojResolveAssemblyReference.cache
