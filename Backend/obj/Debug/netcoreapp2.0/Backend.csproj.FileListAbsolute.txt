@@ -1,0 +1,10 @@
+C:\Projects\Auth\Backend\bin\Debug\netcoreapp2.0\Backend.deps.json
+C:\Projects\Auth\Backend\bin\Debug\netcoreapp2.0\Backend.runtimeconfig.json
+C:\Projects\Auth\Backend\bin\Debug\netcoreapp2.0\Backend.runtimeconfig.dev.json
+C:\Projects\Auth\Backend\bin\Debug\netcoreapp2.0\Backend.dll
+C:\Projects\Auth\Backend\bin\Debug\netcoreapp2.0\Backend.pdb
+C:\Projects\Auth\Backend\obj\Debug\netcoreapp2.0\Backend.csproj.CoreCompileInputs.cache
+C:\Projects\Auth\Backend\obj\Debug\netcoreapp2.0\Backend.AssemblyInfoInputs.cache
+C:\Projects\Auth\Backend\obj\Debug\netcoreapp2.0\Backend.AssemblyInfo.cs
+C:\Projects\Auth\Backend\obj\Debug\netcoreapp2.0\Backend.dll
+C:\Projects\Auth\Backend\obj\Debug\netcoreapp2.0\Backend.pdb
