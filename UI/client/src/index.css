@@ -1,8 +1,8 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
 
 
     .centered {
@@ -10,4 +10,9 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+
+    a {
+      color: inherit; /* blue colors for links too */
+      text-decoration: inherit; /* no underline */
     }

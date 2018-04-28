@@ -12,7 +12,8 @@ import {
 	Toolbar,
 	IconButton,
 	Typography,
-	Button
+	Button,
+	withStyles
 } from 'material-ui';
 import Login from './containers/login';
 import Home from './containers/home';
@@ -21,9 +22,9 @@ import ClippedDrawer from './components/ClippedDrawer';
 const theme = createMuiTheme({
 	palette: {
 		primary: {
-			light: '#73e8ff',
-			main: '#29b6f6',
-			dark: '#0086c3',
+			light: '#BBDEFB',
+			main: '#2196F3',
+			dark: '#82B1FF',
 			contrastText: '#fff'
 		},
 		secondary: {
@@ -33,6 +34,33 @@ const theme = createMuiTheme({
 			contrastText: '#000'
 		}
 	}
+});
+
+const drawerWidth = 240;
+
+const styles = theme => ({
+	root: {
+		flexGrow: 1,
+		height: 430,
+		zIndex: 1,
+		overflow: 'hidden',
+		position: 'relative',
+		display: 'flex'
+	},
+	appBar: {
+		zIndex: theme.zIndex.drawer + 1
+	},
+	drawerPaper: {
+		position: 'relative',
+		width: drawerWidth
+	},
+	content: {
+		flexGrow: 1,
+		backgroundColor: theme.palette.background.default,
+		padding: theme.spacing.unit * 3,
+		minWidth: 0 // So the Typography noWrap works
+	},
+	toolbar: theme.mixins.toolbar
 });
 
 class App extends Component {
@@ -46,15 +74,14 @@ class App extends Component {
 		});
 	};
 	render() {
+		const { classes } = this.props;
+
 		return (
 			<MuiThemeProvider theme={theme}>
-				<div>
-					{/*<Drawer open={true} variant="permanent">
-						<MenuItem>A</MenuItem>
-						<MenuItem>B</MenuItem>
-		</Drawer>*/}
+				<div className={classes.root}>
 					<ClippedDrawer />
-					<main>
+					<main classes={classes.content}>
+						<div className={classes.toolbar} />
 						<Switch>
 							<Route exact path="/" component={Login} />
 							<Route path="/home" component={Home} />
@@ -66,4 +93,4 @@ class App extends Component {
 	}
 }
 
-export default App;
+export default withStyles(styles)(App);
